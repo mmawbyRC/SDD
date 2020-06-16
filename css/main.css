@@ -1,0 +1,75 @@
+body {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1em;
+}
+header {
+  font-size: 16px;
+}
+main {
+  border-width: 1px 0;
+  border-style: solid;
+  padding: 10px 0;
+}
+
+main h1 {
+  margin: 0;
+  font-size: 14px;
+}
+
+main > div + h1 {
+  border-top: 1px solid;
+}
+
+h1 button {
+  all: inherit;
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5em ;
+}
+
+h1 button:focus svg {
+  background-color:green;
+  border-radius: 5px;
+  color: white;
+}
+
+button svg {
+  height: 1em;
+  margin-left: 0.5em;
+}
+
+[aria-expanded="true"] .vert {
+  display: none;
+}
+
+[aria-expanded] rect {
+  fill: currentColor;
+}
+
+main h2{
+  font-family: Georgia,Arial, serif;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 12px;
+}
+li{
+  list-style-type: none;
+  cursor: pointer;
+}
+li>a{
+  color: rgb(102,153,153);
+  text-decoration: none;
+}
+/* page styles */
+
+html {
+  font-family: Verdana,Arial, sans-serif;
+  font-size: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
