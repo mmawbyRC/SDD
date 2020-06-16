@@ -1,178 +1,243 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 
-<!-- written by Bella Ryan, version 1.0 June 2020 -->
+<!-- written by Bella Ryan @Bella-Ryan-980, version 1.0 June 2020 -->
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Documentation">
-    <meta name="keywords" content="System Modeling Tools, Internal Documentation, External Documentation, Intrinsic Documentation, SDD, Software Design Development">
-    <meta name="author" content="Bella Ryan">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Documentation" />
+		<meta
+			name="keywords"
+			content="System Modeling Tools, Internal Documentation, External Documentation, Intrinsic Documentation, SDD, Software Design Development"
+		/>
+		<meta name="author" content="Bella Ryan" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Documentation</title>
-    <link rel='stylesheet' href='../css/main.css'>
-    <script src='../js/main.js'></script>
-</head>
-<body>
-    <h1>Documentation</h1>
-    <div class="Definitions">
-        <h2>Definitions</h2>
+		<title>Documentation</title>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/Impl_Documentation_main.css" />
+		<script src="../js/main.js"></script>
+	</head>
+	<body>
+		<h1>Documentation</h1>
+		<div class="Definitions">
+			<h2>Definitions</h2>
 
-        <div class = "Internal + Intrinsic Documentation">
-            <h3>Internal and External Documentation</h3>
+			<div class="Internal + Intrinsic Documentation">
+				<h3>Internal and External Documentation</h3>
 
-            <p><strong>Internal Documentation</strong> - includes; comments included in the program, use of meaningful identifiers, and consistent and proper use of indentation and spacing that helps the readability as well as conveying the structure and meaning of the code.</p>
-            <p><strong>Intrinsic Documentation</strong> - includes any content that is crucial to the program that can communicate purpose, method, intent etc.</p>
+				<p>
+					<strong>Internal Documentation</strong> - includes; comments
+					included in the program, use of meaningful identifiers, and
+					consistent and proper use of indentation and spacing that
+					helps the readability as well as conveying the structure and
+					meaning of the code.
+				</p>
+				<p>
+					<strong>Intrinsic Documentation</strong> - includes any
+					content that is crucial to the program that can communicate
+					purpose, method, intent etc.
+				</p>
 
-            <ul>
-                <li>Comments can be used to communicate:</li>
-                <ul>
-                    <li>Intent of program/function</li>
-                    <li>Authorship of program and crediting code copied where due</li>
-                </ul>
-                <li>Meaningful identifers should convey the meaning/purpose of what they name:</li>
-                <ul>
-                    <li>Variable names should convey the intended meaning of the variable</li>
-                    <li>Function names should be verbs that indicate the action performed by the function</li>
-                </ul>
-                <li>Indentation and Spacing</li>
-                <ul>
-                    <li>Align all statements that appear at the same level. Use tab to be consistent across levels</li>
-                    <li>Use blank lines and white space to break up modules within your code to increase readability</li>
-                </ul>
-            </ul>
+				<ul>
+					<li>Comments can be used to communicate:</li>
+					<ul>
+						<li>Intent of program/function</li>
+						<li>
+							Authorship of program and crediting code copied
+							where due
+						</li>
+					</ul>
+					<li>
+						Meaningful identifers should convey the meaning/purpose
+						of what they name:
+					</li>
+					<ul>
+						<li>
+							Variable names should convey the intended meaning of
+							the variable
+						</li>
+						<li>
+							Function names should be verbs that indicate the
+							action performed by the function
+						</li>
+					</ul>
+					<li>Indentation and Spacing</li>
+					<ul>
+						<li>
+							Align all statements that appear at the same level.
+							Use tab to be consistent across levels
+						</li>
+						<li>
+							Use blank lines and white space to break up modules
+							within your code to increase readability
+						</li>
+					</ul>
+				</ul>
 
-            <p><i>(View page source in your browser to check out some examples of these ^^)</i></p>
-        </div>
+				<p>
+					<i
+						>(View
+						<a
+							href="view-source:https://mmawbyrc.github.io/SDD/html/Impl_Documentation.html"
+							>page source</a
+						>
+						in your browser to check out some examples of these
+						^^)</i
+					>
+				</p>
+			</div>
 
-        <div class = "External Documentation + System Modelling Tools">
-            <p><strong>External Documentation</strong> - seperate documents from the program; it usually consists of a user guide and sometimes includes a detailed description of the design and implementation features of the program.</p>
+			<div class="External Documentation + System Modelling Tools">
+				<p>
+					<strong>External Documentation</strong> - seperate documents
+					from the program; it usually consists of a user guide and
+					sometimes includes a detailed description of the design and
+					implementation features of the program.
+				</p>
 
-            <p><strong>System Modelling Tools</strong></p>
-            <ul>
-                <li>Context Diagram</li>
-                <ul>
-                    <li>DEFINITION - DFD Level 0 used to show all the external inputs and outputs to and from the system. </li>
-                    <li>GOOD FOR - </li>
-                    <ul>
-                        <li>Number of external entities and nature of data are good indicators of complexity of the system which informs choice of S/W development approach.</li>
-                        <li>It can be used to define the Scope (Includes/Excludes) of a system.</li>
-                    </ul>
-                    <li>DISTINGUISHING FEATURES - </li>
-                    <ul>
-                            <li>Only 1 circle which represents the system</li>
-                            <li>Data needs to be nouns, no verbs as labels on data flow arrows</li>
-                            <li>No I/O between entities, must have a process in between entities</li>
-                    </ul>
-                </ul>
+				<p><strong>System Modelling Tools</strong></p>
+				<ul>
+					<li>Context Diagram</li>
+					<ul>
+						<li>
+							DEFINITION - DFD Level 0 used to show all the
+							external inputs and outputs to and from the system.
+						</li>
+						<li>GOOD FOR -</li>
+						<ul>
+							<li>
+								Number of external entities and nature of data
+								are good indicators of complexity of the system
+								which informs choice of S/W development
+								approach.
+							</li>
+							<li>
+								It can be used to define the Scope
+								(Includes/Excludes) of a system.
+							</li>
+						</ul>
+						<li>DISTINGUISHING FEATURES -</li>
+						<ul>
+							<li>Only 1 circle which represents the system</li>
+							<li>
+								Data needs to be nouns, no verbs as labels on
+								data flow arrows
+							</li>
+							<li>
+								No I/O between entities, must have a process in
+								between entities
+							</li>
+						</ul>
+					</ul>
 
-                <li>IPO Chart/Diagram</li>
-                <ul>
-                    <li>DEFINITION - </li>
-                    <li>GOOD FOR - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                    <li>DISTINGUISHING FEATURES - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                </ul>
-                
-                <li>Data Flow Digram (DFD)</li>
-                <ul>
-                    <li>DEFINITION - </li>
-                    <li>GOOD FOR - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                    <li>DISTINGUISHING FEATURES - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                </ul>
-                
-                <li>Systems Flowchart</li>
-                <ul>
-                    <li>DEFINITION - </li>
-                    <li>GOOD FOR - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                    <li>DISTINGUISHING FEATURES - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                </ul>
-                
-                <li>Structure Chart/Diagram</li>
-                <ul>
-                    <li>DEFINITION - </li>
-                    <li>GOOD FOR - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                    <li>DISTINGUISHING FEATURES - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                </ul>
-                
-                <li>Flowchart</li>
-                <ul>
-                    <li>DEFINITION - </li>
-                    <li>GOOD FOR - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                    <li>DISTINGUISHING FEATURES - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                </ul>
-                
-                <li>Pseudocode</li>
-                <ul>
-                    <li>DEFINITION - </li>
-                    <li>GOOD FOR - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                    <li>DISTINGUISHING FEATURES - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                </ul>
-                
-                <li>Storyboards/Wireframe</li>
-                <ul>
-                    <li>DEFINITION - </li>
-                    <li>GOOD FOR - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                    <li>DISTINGUISHING FEATURES - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                </ul>
-                
-                <li>Data Dictionary</li>
-                <ul>
-                    <li>DEFINITION - </li>
-                    <li>GOOD FOR - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                    <li>DISTINGUISHING FEATURES - </li>
-                    <ul>
-                        <li>.</li>
-                    </ul>
-                </ul>
-            </ul>
-        </div>
-        
-    </div>
-</body>
+					<li>IPO Chart/Diagram</li>
+					<ul>
+						<li>DEFINITION -</li>
+						<li>GOOD FOR -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+						<li>DISTINGUISHING FEATURES -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+					</ul>
+
+					<li>Data Flow Digram (DFD)</li>
+					<ul>
+						<li>DEFINITION -</li>
+						<li>GOOD FOR -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+						<li>DISTINGUISHING FEATURES -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+					</ul>
+
+					<li>Systems Flowchart</li>
+					<ul>
+						<li>DEFINITION -</li>
+						<li>GOOD FOR -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+						<li>DISTINGUISHING FEATURES -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+					</ul>
+
+					<li>Structure Chart/Diagram</li>
+					<ul>
+						<li>DEFINITION -</li>
+						<li>GOOD FOR -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+						<li>DISTINGUISHING FEATURES -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+					</ul>
+
+					<li>Flowchart</li>
+					<ul>
+						<li>DEFINITION -</li>
+						<li>GOOD FOR -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+						<li>DISTINGUISHING FEATURES -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+					</ul>
+
+					<li>Pseudocode</li>
+					<ul>
+						<li>DEFINITION -</li>
+						<li>GOOD FOR -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+						<li>DISTINGUISHING FEATURES -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+					</ul>
+
+					<li>Storyboards/Wireframe</li>
+					<ul>
+						<li>DEFINITION -</li>
+						<li>GOOD FOR -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+						<li>DISTINGUISHING FEATURES -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+					</ul>
+
+					<li>Data Dictionary</li>
+					<ul>
+						<li>DEFINITION -</li>
+						<li>GOOD FOR -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+						<li>DISTINGUISHING FEATURES -</li>
+						<ul>
+							<li>.</li>
+						</ul>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>
