@@ -1,4 +1,5 @@
 let answersList = [];
+
 function runQuiz(topic){
   alert(topic);
   /*
@@ -9,36 +10,35 @@ function runQuiz(topic){
   display total
   */
   loadFile(topic);
-}
 
+}
+/* This function will read a text file containing
+answers to the multiple choice question. The parameter is the exact
+file name which should be in the flatfiles folder
+*/
 function loadFile(f_topic){
-  fileToRead = readFile();
-
-  alert('here now');
-  xmlhttp.onload =loadHandler;
-  xmlhttp.onerror = errorHandler;
-}
-function readFile(){
-  console.log('readFile');
+  const fileToRead = '../flatfiles/'+ f_topic +'.txt';
+  console.log ('Read file: ', fileToRead);
   var txt = '';
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function(){
-    alert(xmlhttp.readyState);
+    console.log(xmlhttp.readyState);
     if(xmlhttp.status == 200 && xmlhttp.readyState == 4){
       txt = xmlhttp.responseText;
-      alert(txt);
+      console.log('Read success: ', txt);
+      loadAnswers(txt);
     }
   };
-  xmlhttp.open("GET","sample.txt",true);
+  xmlhttp.open("GET",fileToRead,true);
   xmlhttp.send();
-
-  return xmlhttp;
 }
-function loadHandler(event) {
-  alert('loadHandler');
-  let csv = event.target.result;
-  let allTextLines = csv.split(/\r\n|\n/);
-  for (let i=1; i<allTextLines.length; i++) {
+/* This function will re-format the text file around
+output the answers as an array of characters
+*/
+function loadAnswers(myFile) {
+  console.log('loadAnswers');
+  let allTextLines = myFile.split(/\r\n|\n/);
+  for (let i=0; i<allTextLines.length; i++) {
     if (allTextLines[i] != ''){
         answersList.push(allTextLines[i].replace(","," "));
       }
@@ -46,8 +46,6 @@ function loadHandler(event) {
     console.log(answersList);
 }
 
-function errorHandler(evt) {
-  if(evt.target.error.name == "NotReadableError") {
-      alert("Cannot read file!");
-  }
+function errorHandler() {
+      alert("File had nothing on it");
 }
