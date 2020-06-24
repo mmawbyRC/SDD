@@ -22,6 +22,16 @@ main h1 {
 main > div + h1 {
 	border-top: 1px solid;
 }
+.retPrac {
+	width: 50%;
+	margin:50px auto;
+	display:flex;
+	justify-content: space-around;
+}
+
+#b_quiz, #b_test{
+	color: teal;
+}
 
 h1 button {
 	all: inherit;

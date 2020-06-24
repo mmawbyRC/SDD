@@ -1,0 +1,3 @@
+Of the four forms of documentation listed below, which is considered to be internal documentation?-Tutorial-Installation guide-Online help-Comments within the source code-4
+Dataflow diagrams, IPO charts and structure charts are all forms of documentation for whom?-The developers-The users-Future maintenance programmers-Both (A) and (C)-4
+Identifier names that describe their purpose are often referred to as what type of documentation?-Source code documentation-Internal documentation-Intrinsic documentation-Reference manual documentation-3
